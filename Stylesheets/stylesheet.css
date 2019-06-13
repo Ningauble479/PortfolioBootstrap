@@ -1,0 +1,124 @@
+body, html {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y:auto;
+}
+
+#underhead {
+    min-height: 100%;
+    overflow: hidden;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar {
+    padding: 0;
+    background-color: #A9A9A9;
+    border-right: 3px solid #EFEFEF;
+    overflow-wrap:break-word;
+}
+
+#col1, #col2 {
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+#welcome {
+    color: #747474;
+    overflow: hidden;
+    /* font-size: 75px; */
+    font-size: 4vw;
+    width: 65%;
+    border-right: .15em solid #FF652F;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    /* justify-content: center; */
+    animation: typing 3.5s steps(40, end),
+ blink-caret .75s step-end infinite;
+    line-height: 10vh;
+}
+
+#contentbox {
+    margin-right:-15px;
+    width:80%;
+    background-color: #a9a9a9;
+    overflow: auto;
+}
+
+#cimgcontain {
+    max-width:20%;
+}
+
+#cbcontain {
+    max-width:80%;
+}
+
+.col-sm-2 {
+    padding-right: 0px;
+}
+
+
+@keyframes typing {
+    from { max-width: 0 }
+    to { max-width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #FF652F; }
+}
+
+::-webkit-scrollbar {
+    width: .5vw;
+    height: 0;
+}
+  
+::-webkit-scrollbar-track {
+    background: #a9a9a9; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6c757d; 
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #6c757d; 
+}
+
+@media screen and (max-width: 980px) {
+
+    #biographyhead {
+        font-size:50px;
+    }
+
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    #biographyhead {
+        font-size:30px;
+    }
+    
+}
+
+@media screen and (max-width: 640px) {
+
+#header {
+    position:static;
+}
+
+#cardname {
+}
+
+#cardinfo {
+}
+
+
+#biographyhead {
+    font-size: 20px;
+    align-items:center;
+}
+}
