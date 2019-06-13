@@ -121,4 +121,8 @@ body, html {
     font-size: 20px;
     align-items:center;
 }
+
+#gallery {
+    flex-direction: column;
+}
 }
